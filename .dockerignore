@@ -1,0 +1,7 @@
+**/node_modules/
+**/dist
+**/*.pyc
+.git
+npm-debug.log
+vite/
+venv/
