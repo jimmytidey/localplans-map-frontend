@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command, mode }) => {
   // Load app-level env vars to node-level env vars.
   process.env = {...process.env, ...loadEnv(mode, process.cwd())};
-
+module.exports = { build: { sourcemap: true, }, };
   return defineConfig({
     build: {
       outDir: '../app'
@@ -15,6 +15,7 @@ export default defineConfig(({ command, mode }) => {
   }
 )
 
+module.exports = { build: { sourcemap: true, }, };
 
 
 
